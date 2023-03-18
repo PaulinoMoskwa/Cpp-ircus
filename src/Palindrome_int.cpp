@@ -1,7 +1,6 @@
 #include "../include/Palindrome_int.h"
 #include <string>
 #include <algorithm>
-#include <iostream>
 
 
 bool Solution::isPalindrome(int x){
