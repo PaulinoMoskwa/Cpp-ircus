@@ -1,3 +1,4 @@
-# Ignore the build folders
-/test/build
+# Ignore the build folders and .vscode
+build
 /test/test_blueprint/build
+.vscode

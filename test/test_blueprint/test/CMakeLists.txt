@@ -6,7 +6,7 @@ set(This ExampleTest)
 # Dependencies
 add_subdirectory(googletest)
 
-# Add SOURCES the code (tests go without headers)
+# Add SOURCES (tests go without headers)
 set(SOURCES
     ExampleTests.cpp
 )
