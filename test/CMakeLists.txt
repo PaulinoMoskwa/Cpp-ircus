@@ -6,13 +6,18 @@ set(This Tests)
 # Dependencies
 add_subdirectory(googletest)
 
-# Add SOURCES (tests go without headers)
+# Add HEADER
+set(HEADER
+    CustomTest.h
+)
+
+# Add SOURCES
 set(SOURCES
     TestPalindrome_int.cpp
     TestRemoveElement.cpp
 )
 
-add_executable(${This} ${SOURCES})
+add_executable(${This} ${HEADER} ${SOURCES})
 target_link_libraries(${This} PUBLIC gtest_main CppProject)
 
 add_test(

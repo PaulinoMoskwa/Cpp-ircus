@@ -1,5 +1,5 @@
-#ifndef PALINDROMEINT_H
-#define PALINDROMEINT_H
+#ifndef PALINDROME_INT_H
+#define PALINDROME_INT_H
 
 
 class Solution {
@@ -8,4 +8,4 @@ class Solution {
 };
 
 
-#endif // PALINDROMEINT_H
+#endif // PALINDROME_INT_H
