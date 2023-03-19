@@ -17,6 +17,7 @@ include_directories(include)
 # Add SOURCES
 set(SOURCES
     src/Palindrome_int.cpp
+    src/RemoveElement.cpp
 )
 
 add_library(${This} STATIC ${SOURCES})

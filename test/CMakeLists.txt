@@ -9,6 +9,7 @@ add_subdirectory(googletest)
 # Add SOURCES (tests go without headers)
 set(SOURCES
     TestPalindrome_int.cpp
+    TestRemoveElement.cpp
 )
 
 add_executable(${This} ${SOURCES})
