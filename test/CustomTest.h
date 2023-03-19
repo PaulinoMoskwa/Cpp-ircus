@@ -3,18 +3,15 @@
 
 #include<string>
 
-std::string Green = "\033[1;32m";
-std::string GreenEnd = "\033[0m";
-
 
 #define GIVEN(msg) \
-    std::cout << std::setw(32) << Green + "GIVEN: " + GreenEnd << msg << "\n";
+    std::cout << std::setw(32) << "\033[1;32mGIVEN: \033[0m" << msg << "\n";
 
 #define WHEN(msg) \
-    std::cout << std::setw(32) << Green + "WHEN: " + GreenEnd << msg << "\n";
+    std::cout << std::setw(32) << "\033[1;32mWHEN: \033[0m" << msg << "\n";
 
 #define THEN(msg) \
-    std::cout << std::setw(32) << Green + "THEN: " + GreenEnd << msg << "\n";
+    std::cout << std::setw(32) << "\033[1;32mTHEN: \033[0m" << msg << "\n";
 
 
 #endif //CUSTOM_TEST_H

@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
-#include "../include/RemoveElement.h"
 #include "CustomTest.h"
+#include "../include/RemoveElement.h"
 
 
 TEST(TestRemoveElement, RemoveElementFromVector) {
@@ -34,12 +34,11 @@ TEST(TestRemoveElement, RemoveElementFromVector) {
 class Test_RemoveElement : public ::testing::TestWithParam<std::tuple<std::vector<int>, int, std::vector<int>>> {};
 
 TEST_P(Test_RemoveElement, RemoveElementFromVector) {
-    
-    std::tuple<std::vector<int>, int, std::vector<int>> data = GetParam();
 
     Solution solution;
 
     GIVEN("a vector of integers and an integer value")
+    std::tuple<std::vector<int>, int, std::vector<int>> data = GetParam();
     std::vector<int> vector = std::get<0>(data);
     int value = std::get<1>(data);
 
