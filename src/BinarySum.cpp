@@ -24,7 +24,7 @@ std::string Solution::addBinary(std::string a, std::string b) {
 
     // If the two strings are of different lengths, manage the last part of the longest
     if (len_diff > 0) {
-        extra_one = leftover_sum(long_string, result, len_diff, extra_one);
+        extra_one = leftover_sum(long_string, result, short_string_len, len_diff, extra_one);
     }
 
     // Manage the extra 1, if present
@@ -80,12 +80,12 @@ int Solution::main_sum(const std::string& a, const std::string& b, std::string& 
 }
 
 
-int Solution::leftover_sum (const std::string& long_string, std::string& result, int len_diff, int extra_one) {
+int Solution::leftover_sum (const std::string& long_string, std::string& result, int short_string_len, int len_diff, int extra_one) {
         
     for (int i = 0; i < len_diff; i++) {
 
         // Convert the char in integer
-        int elem = long_string[len_diff + i] - '0';
+        int elem = long_string[short_string_len + i] - '0';
 
         int count_of_ones = elem + extra_one;
 

@@ -41,5 +41,7 @@ TEST_P(Test_BinarySum, BinarySum) {
 }
 
 INSTANTIATE_TEST_CASE_P(BinarySumInstance, Test_BinarySum, ::testing::Values(
-    std::vector<std::string>{"11", "1", "100"}
+    std::vector<std::string> {"11", "1", "100"},
+    std::vector<std::string> {"1010", "1011", "10101"},
+    std::vector<std::string> {"111", "1", "1000"}
 ));

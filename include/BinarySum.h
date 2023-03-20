@@ -20,6 +20,7 @@ class Solution {
         int leftover_sum (
             const std::string& long_string,
             std::string& result,
+            int short_string_len,
             int len_diff,
             int extra_one
         );
