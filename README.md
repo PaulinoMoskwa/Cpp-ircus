@@ -12,3 +12,8 @@ Every implementation has its unit test since "trust me, it works" is not enough 
 |:-----:|:------------|:----:|:------:|:---------:|
 | Palindrome | Given an integer `x`, return `true` if `x` is a palindrome, and `false` otherwise. A number is palindrome when it reads the same backward as forward. The number `121` is palindrome, `-121` is not. | [Code](https://github.com/PaulinoMoskwa/Cpp-ircus/blob/master/include/Palindrome_int.h) | [Code](https://github.com/PaulinoMoskwa/Cpp-ircus/blob/master/src/Palindrome_int.cpp) | [Test](https://github.com/PaulinoMoskwa/Cpp-ircus/blob/master/test/TestPalindrome_int.cpp) |
 | Remove element | Given an integer vector `nums` and an integer `val`, remove all occurrences of `val` in `nums` **in-place**. | [Code](https://github.com/PaulinoMoskwa/Cpp-ircus/blob/master/include/RemoveElement.h) | [Code](https://github.com/PaulinoMoskwa/Cpp-ircus/blob/master/src/RemoveElement.cpp) | [Test](https://github.com/PaulinoMoskwa/Cpp-ircus/blob/master/test/TestRemoveElement.cpp) |
+
+
+To do list:
+- Add Example.h and Example.cpp
+- Add src/Example.cpp in CMakeLists.txt

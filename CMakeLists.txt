@@ -18,6 +18,7 @@ include_directories(include)
 set(SOURCES
     src/Palindrome_int.cpp
     src/RemoveElement.cpp
+    src/BinarySum.cpp
 )
 
 add_library(${This} STATIC ${SOURCES})
