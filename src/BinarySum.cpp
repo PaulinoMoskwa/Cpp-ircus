@@ -40,83 +40,83 @@ std::string Solution::addBinary(std::string a, std::string b) {
 
 int Solution::main_sum(const std::string& a, const std::string& b, std::string& result, int short_string_len){
         
-        int extra_one = 0;
+    int extra_one = 0;
 
-        for (int i = 0; i < short_string_len; i++) {
+    for (int i = 0; i < short_string_len; i++) {
             
-            // When we subtract '0' from a digit character,
-            // the resulting value is the integer value of the digit.
-            // This only works for single digits. 
-            int elem_a = a[i] - '0';
-            int elem_b = b[i] - '0';
+        // When we subtract '0' from a digit character,
+        // the resulting value is the integer value of the digit.
+        // This only works for single digits. 
+        int elem_a = a[i] - '0';
+        int elem_b = b[i] - '0';
 
-            int count_of_ones = elem_a + elem_b + extra_one;
+        int count_of_ones = elem_a + elem_b + extra_one;
 
-            switch (count_of_ones) {
+        switch (count_of_ones) {
                 
-                case 3:
-                    result.push_back('1');
-                    extra_one = 1;
-                    break;
+            case 3:
+                result.push_back('1');
+                extra_one = 1;
+                break;
                 
-                case 2:
-                    result.push_back('0');
-                    extra_one = 1;
-                    break;
+            case 2:
+                result.push_back('0');
+                extra_one = 1;
+                break;
 
-                case 1:
-                    result.push_back('1');
-                    extra_one = 0;
-                    break;
+            case 1:
+                result.push_back('1');
+                extra_one = 0;
+                break;
 
-                case 0:
-                    result.push_back('0');
-                    extra_one = 0;
-                    break;       
-            }
+            case 0:
+                result.push_back('0');
+                extra_one = 0;
+                break;       
         }
-
-        return extra_one;
     }
+
+    return extra_one;
+}
 
 
 int Solution::leftover_sum (const std::string& long_string, std::string& result, int len_diff, int extra_one) {
         
-        for (int i = 0; i < len_diff; i++) {
+    for (int i = 0; i < len_diff; i++) {
 
-                // Convert the char in integer
-                int elem = long_string[len_diff + i] - '0';
+        // Convert the char in integer
+        int elem = long_string[len_diff + i] - '0';
 
-                int count_of_ones = elem + extra_one;
+        int count_of_ones = elem + extra_one;
 
-                switch (count_of_ones) {
+        switch (count_of_ones) {
                 
-                    case 2:
-                        result.push_back('0');
-                        extra_one = 1;
-                        break;
+            case 2:
+                result.push_back('0');
+                extra_one = 1;
+                break;
 
-                    case 1:
-                        result.push_back('1');
-                        extra_one = 0;
-                        break;
+            case 1:
+                result.push_back('1');
+                extra_one = 0;
+                break;
 
-                    case 0:
-                        result.push_back('0');
-                        extra_one = 0;
-                        break;
-                }
+            case 0:
+                result.push_back('0');
+                extra_one = 0;
+                break;
             }
-
-        return extra_one;
-    }
+        }
+    
+    return extra_one;
+}
 
 
 std::string Solution::get_longer_string(std::string& a, std::string& b, int long_string_len) {
     
-        if (long_string_len == a.size()) {
-            return a;
-        } else {
-            return b;
-        }
+    if (long_string_len == a.size()) {
+        return a;
+    } else {
+        return b;
     }
+}
