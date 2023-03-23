@@ -16,6 +16,7 @@ set(SOURCES
     TestPalindrome_int.cpp
     TestRemoveElement.cpp
     TestBinarySum.cpp
+    TestLengthLastWord.cpp
 )
 
 add_executable(${This} ${HEADER} ${SOURCES})

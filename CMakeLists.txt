@@ -19,6 +19,7 @@ set(SOURCES
     src/Palindrome_int.cpp
     src/RemoveElement.cpp
     src/BinarySum.cpp
+    src/LengthLastWord.cpp
 )
 
 add_library(${This} STATIC ${SOURCES})
